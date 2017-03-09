@@ -17,3 +17,10 @@ version '0.1.0'
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/citius_testslave' if respond_to?(:source_url)
+
+depends 'java', '~> 1.47.0'
+depends 'git', '~> 6.0.0'
+depends 'citius_jenkins', '~> 0.1.4'
+depends 'chrome', '~> 3.0.0'
+depends 'chromedriver', '~> 2.0.0'
+depends 'firefox', '~> 3.0.1'

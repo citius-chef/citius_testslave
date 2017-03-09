@@ -6,6 +6,9 @@
 
 include_recipe 'java'
 include_recipe 'git'
+include_recipe 'chrome'
+include_recipe 'firefox'
+include_recipe 'chromedriver'
 include_recipe 'citius_jenkins::install_slave'
 
 tag('slave')
