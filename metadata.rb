@@ -18,7 +18,7 @@ version '0.1.0'
 #
 # source_url 'https://github.com/<insert_org_here>/citius_testslave' if respond_to?(:source_url)
 
-depends 'java', '~> 1.47.0'
+depends 'windows', '~> 2.1.1'
 depends 'git', '~> 6.0.0'
 depends 'citius_jenkins', '~> 0.1.4'
 depends 'chrome', '~> 3.0.0'

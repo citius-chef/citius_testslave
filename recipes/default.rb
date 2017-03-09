@@ -4,7 +4,12 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-include_recipe 'java'
+windows_package 'install JDK 1.8u121' do
+  source node['java']['windows']['url']
+  installer_type :custom
+  action :install
+end
+
 include_recipe 'git'
 include_recipe 'chrome'
 include_recipe 'firefox'
