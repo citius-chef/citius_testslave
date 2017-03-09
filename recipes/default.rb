@@ -10,6 +10,10 @@ windows_package 'install JDK 1.8u121' do
   action :install
 end
 
+windows_path 'C:\Program Files\Java\jdk1.8.0_121\bin' do
+  action :add
+end
+
 include_recipe 'git'
 include_recipe 'chrome'
 include_recipe 'firefox'
