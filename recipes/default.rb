@@ -29,7 +29,6 @@ include_recipe 'git'
 include_recipe 'chrome'
 include_recipe 'firefox'
 include_recipe 'chromedriver'
-include_recipe 'citius_jenkins::install_slave'
 
 tag('slave')
 ruby_block 'set `slave_labels` node attributes to test-server' do
@@ -38,3 +37,5 @@ ruby_block 'set `slave_labels` node attributes to test-server' do
     node.save
   end
 end
+
+include_recipe 'citius_jenkins::install_slave'
