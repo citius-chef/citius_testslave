@@ -33,7 +33,7 @@ include_recipe 'chromedriver'
 tag('slave')
 ruby_block 'set `slave_labels` node attributes to test-server' do
   block do
-    node.normal['slave_labels'] = 'test-server'
+    node.normal['slave_labels'] = node['slave_labels']
     node.save
   end
 end
