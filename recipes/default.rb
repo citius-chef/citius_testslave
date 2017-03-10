@@ -16,7 +16,7 @@ end
 
 env 'JAVA_HOME' do
   value 'C:\\Program Files\\Java\\jdk1.8.0_121'
-  notifies :restart, 'reboot[now]', :delayed
+  notifies :reboot_now, 'reboot[now]', :delayed
 end
 
 reboot 'now' do
